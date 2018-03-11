@@ -31,7 +31,7 @@
                 <div class="col-md-4 order-md-2 mb-4">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Progreso</span>
-                        <span class="badge badge-info badge-pill">2/7</span>
+                        <span class="badge badge-info badge-pill">4/7</span>
                     </h4>
                     <ul class="list-group list-inline mb-3">
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
@@ -47,13 +47,13 @@
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
+                            <div class="text-success">
                                 <h6 class="my-0">Valor del proceso</h6>
                                 <small>Juramento estimatorio y cuantia del proceso</small>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
+                            <div class="text-success">
                                 <h6 class="my-0">Hechos</h6>
                                 <small>Fundamentos de derecho, hechos y accion</small>
                             </div>
@@ -89,65 +89,72 @@
 
                 </div>
                 <div class="col-md-8 order-md-1">
-                    <h4 class="mb-3">Pretensiones</h4>
+                    <h4 class="mb-3">Hechos</h4>
                     <form class="needs-validation" novalidate>
                         <div class="row">
 
 
                         </div>
-                        <h4 class="mb-3 mt-3">Pretensiones constitutivas</h4>
+                        <h4 class="mb-3 mt-3">Fundamentos de derecho</h4>
                         <div class="row">
                             <div class="col-md-12 mb-3">
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Pretensión 1</label>
+                                    <label for="exampleFormControlTextarea1"></label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <div class="d-flex justify-content-between" >
                                     <span></span>
-                                    <button class="btn btn-primary btn-sm " type="submit">Agregar pretensión</button>
-                                </div>
-
-                                <hr class="mb-4">
-                            </div>
-                        </div>
-                        <h4 class="mb-3 mt-3">Pretensiones declarativas</h4>
-                        <div class="row">
-                            <div class="col-md-12 mb-3">
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Pretensión 1</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <div class="d-flex justify-content-between" >
-                                    <span></span>
-                                    <button class="btn btn-primary btn-sm " type="submit">Agregar pretensión</button>
-                                </div>
-
-                                <hr class="mb-4">
-                            </div>
-                        </div>
-                        <h4 class="mb-3 mt-3">Pretensiones de condena</h4>
-                        <div class="row">
-                            <div class="col-md-12 mb-3">
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Pretensión 1</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <div class="d-flex justify-content-between" >
-                                    <span></span>
-                                    <button class="btn btn-primary btn-sm " type="submit">Agregar pretensión</button>
+                                    <button class="btn btn-primary btn-sm " type="submit">Agregar</button>
                                 </div>
 
                                 <hr class="mb-4">
                             </div>
                         </div>
                         
+                        <h4 class="mb-3 mt-3">Hechos</h4>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1"></label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-between" >
+                                    <span></span>
+                                    <button class="btn btn-primary btn-sm " type="submit">Agregar</button>
+                                </div>
+
+                                <hr class="mb-4">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+
+                            <div class="col-md-12 mb-3">
+                                <label for="tipo_juez">Tipo de accion</label>
+                                <select class="custom-select d-block w-100" id="tipo_juez" required>
+                                    <option disabled selected value="">Seleccionar...</option>
+                                    <option>A) Controversias sobre propiedad horizontal. </option>
+                                    <option>B) Fijación, aumento, disminución, exoneración de alimentos y restitución de pensiones alimenticias. </option>
+                                    <option>C) Patria postestad.</option>
+                                    <option>D) Controversias de indole comercial.</option>
+                                    <option>E) Derechos de autor.</option>
+                                    <option>F) Reposicion, reivindicacion y cancelacion de titulos valores.</option>
+                                    <option>G) Lanzamiento por ocupacion de hecho de predios rurales</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor seleccione una opción.
+                                </div>
+                            </div>
+                        </div>
+                         
+                        
                         <hr class="mb-4">
                         <div class="row">
                             <div class="col-md-6">
-                                <button onclick="window.location.href = 'pag1.html'" class="btn btn-primary btn-lg btn-block" type="button">Anterior</button>
+                                <button onclick="window.location.href = 'pag3.html'" class="btn btn-primary btn-lg btn-block" type="button">Anterior</button>
                             </div>
                             <div class="col-md-6">
-                                <button onclick="window.location.href = 'pag3.html'" class="btn btn-primary btn-lg btn-block" type="button">Siguiente</button>
+                                <button onclick="window.location.href = 'pag5.html'" class="btn btn-primary btn-lg btn-block" type="button">Siguiente</button>
                             </div>
                         </div>
                 </div>
